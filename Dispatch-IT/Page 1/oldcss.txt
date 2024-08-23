@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#nav-bar {
+    height: 10vh;
+    background: linear-gradient(to right, rgb(3, 118, 156), blue, darkblue);
+}
+
+#stats {
+    height: 25vh;
+    background: linear-gradient(to right, pink, lightblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8vh;
+
+}
+
+#orders {
+    height: 90%;
+    width: 35vh;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+#pie-chart {
+    height: 4vw;
+    width: 4vw;
+    background-color: lightseagreen;
+    border-radius: 50%;
+
+}
+
+#orders #data {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4vw;
+}
+
+.total-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 800;
+    font-size: 1.05vw;
+}
+
+#data .rows .data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9vw;
+    font-weight: 600;
+}
+
+.data i {
+    font-size: 0.6vw;
+}
+
+#timings {
+    height: 90%;
+    width: 80vh;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#timings .upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vw 1vw;
+    /* background-color: lightseagreen; */
+}
+
+.upper h4 {
+    font-size: 1vw;
+    font-weight: 600;
+    color: rgb(15, 15, 95);
+}
+
+h4 span {
+    color: red;
+}
+
+.upper .icon {
+    font-size: 1.1vw;
+    font-weight: 800;
+}
+
+#timings .lower {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    padding: 0.7vw 0;
+}
+
+.lower .Times,
+#drive-time .Times {
+    height: 14vh;
+    width: 25vh;
+    border-radius: 3px;
+    border: 0.4px solid rgb(184, 179, 179);
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    padding: 1.3vw 0.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Times .left .text {
+    font-size: 0.7vw;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.Times .left .time {
+    font-weight: 700;
+    font-weight: 1.5vw;
+    color: darkblue;
+}
+
+.right {
+    height: 100%;
+    padding: 1.1vw 0.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Times .right .text {
+    font-size: 0.7vw;
+    font-weight: 600;
+}
+
+.Times .right .time {
+    background-color: rgb(23, 55, 23);
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+
+#drive-time {
+    height: 90%;
+    width: 36vh;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0;
+}
+
+#drive-time .icon {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: end;
+    font-size: 1.2vw;
+    font-weight: 800;
+    margin-top: 1vw;
+    margin-right: 5vw;
+}
+
+#drive-time .Times {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.6vw;
+}
+
+#SOS {
+    height: 90%;
+    width: 36vh;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+}
+
+#SOS #left {
+    padding: 0.5vw;
+    height: 100%;
+    width: 50%;
+}
+
+#left h1 {
+    font-size: 0.9vw;
+    font-weight: 800;
+}
+
+#left .times {
+    margin-top: 0.6vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#left .times h3 {
+    background-color: rgb(20, 57, 20);
+    color: white;
+    padding: 1px 6px;
+    border-radius: 5px;
+}
+
+#left h2 {
+    font-size: 0.9vw;
+    font-weight: 600;
+    margin-top: 2vw;
+}
+
+#SOS #right {
+    height: 100%;
+    width: 50%;
+}
+
+#right .img {
+    width: 50%;
+    object-fit: cover;
+    margin-top: 3vw;
+    margin-left: 2vw;
+}
