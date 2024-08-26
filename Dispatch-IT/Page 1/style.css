@@ -3,7 +3,7 @@
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-family: gilroy;
+    font-family: "gilroy";
 }
 
 html,
@@ -27,6 +27,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 #nav-bar #left{
     height: 100%;
@@ -118,21 +119,62 @@ body {
     margin-left: 5px;
     cursor: pointer;
 }
-#stats {
-    height: 25vh;
-    background: -webkit-gradient(linear, left top, right top, from(pink), to(lightblue));
+
+#page2{
+    width: 100%;
+    height: 7%;
+    /* background-color: black; */
     background: -o-linear-gradient(left, #49a09d, #3CF2DE);
     background: linear-gradient(to right, rgba(73, 160, 157,0.6), rgba(60, 242, 222,0.4));
+}
+
+#page2 ul{
+    font-size: 15px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 80px;
+    color: #000000b0;
+    padding: 13px 30px;
+}
+
+#page2 ul .primary{
+    height: 100%;
+    background-color:#144f5e87 ;
+    border-radius: 20px;
+}
+
+#page2 ul li{
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: 0.4s all;
+}
+
+#page2 ul li:hover{
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    background-color: 
+    #144f5e87;
+    border-radius: 20px;
+    padding: 1px 1px;
+}
+
+
+#stats {
+    height: 25vh;
+    background-color: 
+    #d9f4f2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 1.8vh;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    gap: 20vh;
 
 }
 
@@ -140,7 +182,7 @@ body {
     height: 90%;
     width: 35vh;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -151,6 +193,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 1vw;
+
 }
 
 #pie-chart {
@@ -293,6 +336,13 @@ h4 span {
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
+
+.ri-hourglass-2-line{
+    position: relative ;
+    top: 5%;
+    left: 90%;
+
+}
 #drivers-details{
     margin-top: 8px;
     font-size: 0.8vw;
@@ -326,6 +376,7 @@ h4 span {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    
 }
 
 .Times .right .text {
@@ -336,7 +387,7 @@ h4 span {
 .Times .right .time {
     background-color: rgb(23, 55, 23);
     text-align: center;
-    color: white;
+    color: rgb(238, 224, 224);
     font-weight: 700;
     border-radius: 5px;
 }
@@ -432,151 +483,235 @@ h4 span {
     margin-left: 2vw;
 }
 
+#dri{height: 90%;
+width: 35vh;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+gap: 1vw;
+}
 
+#dri #tot {
+    padding: 0.5vw;
+    height: 100%;
+    width: 50%;
+}
 
+#tot h1 {
+    font-size: 1vw;
+    font-weight: 800;
+    text-align: left;
+    position: relative;
+    top: 50;
+    right: 60px;
+}
+
+#tot .timesss {
+    margin-top: 0.6vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 1.4vw;
+    font-weight: 500;
+    position: absolute;
+    top: 21%;
+    left: 54%;
+    
+}
+
+#tot .timesss h3 {
+    background-color: rgb(20, 57, 20);
+    color: white;
+    padding: 1px 6px;
+    border-radius: 5px;
+}
+
+#tot img {
+    width: 70%;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.sta{
+    font-weight: 500;
+    position: absolute;
+    left: 53.7%;
+    top: 28%;
+    line-height: 32px;
+}
+
+.sta h2{
+    padding: 5px;
+    background-color: #7fbf7f;
+    border-radius: 20px;
+}
+
+.sta h4{
+    font-size: 19px;
+    font-weight: 900;
+    margin-left: 8px;
+    color: green;
+}
 .head {
-    font-size: 30px;
+    width: 100%;
+    height: 50%;
+    font-size: 25px;
     font-weight: 800;
     font-family: "Helvetica";
-    margin-left: 30px;
-    margin-top: 20px;
     color:rgb(35, 32, 32);
-}
-
-.info {
+    position: relative;
+    padding-left: 5px;
     
-    width: 200px;
-    height: 250px;
-    background-color: white;
-    position: absolute;
-    top: 350px;
-    left: 20px;
-    align-content: center;
-    border-radius: 10px;
-    /* border: 1px solid black; */
-    border: none;
-    z-index: 10;
 }
 
-.id {
-    border-bottom: 1px solid black;
-}
-
-.info .id .link {
-    font-size: 20px;
+ .info {
+    width: 260px;
+    height: 260px;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 10%;
-    left: 50%;
+    left: 15px;
+    align-content: center;
+    border-radius: 50%;
+    border: 0.2px solid rgba(0, 0, 0, 0.177); 
+    border: none;
+    z-index: 10;
+} 
+
+
+
+.info .id {
+    font-size: 20px;
+    position: absolute;
+    top: 7%;
+    left: 33%;
    word-spacing: 100px;
    font-weight: 600;
    color: rgb(41, 159, 52);
    
-    
+     
 }
 
 .info .id  > h1 {
     font-size: 20px;
     position: absolute;
-    top: 10%;
-    left: 5%;
+    top: 100%;
+    left: 25%;
     font-weight: 700;
     color: rgb(35, 32, 32);
-    
-}
+
+} 
 
 
-.img1{
+ .img1{
     width: 15%;
     position: relative;
     top: 23px;
-    left: 97px;
-}
+    left: 150px;
+} 
 
 
-.time > h1 {
+ .time > h1 {
     font-size: 20px;
     position: absolute;
     top: 35%;
     left: 5%;
     font-weight: 600;
     color: rgb(35, 32, 32);
-}
+} 
 
-.time span{
+ .time span{
     font-size: 20px;
     position: absolute;
     top: 35%;
     right: 5%;
     font-weight: 600;
     color: rgb(35, 32, 32);
+    text-align: center;
 
-} 
+}  
 
 
 
-.adress > p {
+ .adress > p {
     font-size: 15px;
     margin-left: 7px;
     margin-top: 70px;
     font-weight: 700;
     color: grey;
-}
+    text-align: center;
+} 
 
 
 .name {
     font-size: 20px;
     position: absolute;
     bottom: 8%;
-    left: 31%;
+    left: 35%;
     font-weight: 600;
     color: rgb(35, 32, 32);
+    text-align: center;
     
-}
+} 
 
-.info2 {
+ .info2 {
     
-    width: 200px;
-    height: 250px;
-    background-color: white;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    top: 350px;
-    left: 300px;
-    align-content: center;
-    border-radius: 10px;
-    /* border: 1px solid black; */
+    top: 10%;
+    left: 295px;
+    border-radius: 50%;
+    border: 0.2px solid rgba(0, 0, 0, 0.177); 
     border: none;
+    z-index: 10;
    
 }
 
-.id2 {
-    border-bottom: 1px solid black;
-}
 
 
-.info2 .id2 .link2 {
+.info2 .id2 >span {
     font-size: 20px;
     position: absolute;
-    top: 10%;
-    left: 50%;
+    top: 7%;
+    left: 39%;
    word-spacing: 100px;
    font-weight: 600;
-   color: rgb(109, 110, 120);
-   margin-left: 35px;
-    
+   color: rgb(83, 87, 90);
+   text-align: center;
+   
 }
 
 .info2 .id2  > h1 {
     font-size: 20px;
     position: absolute;
-    top: 10%;
-    left: 5%;
+    top: 18%;
+    left: 43%;
     font-weight: 700;
     color: rgb(35, 32, 32);
+    text-align: center;
 
 }
 
 
-
+.img2{
+    width: 15%;
+    position: absolute;
+    top: 34%;
+    left: 175px;
+}
 
 
 .time2 > h1 {
@@ -600,60 +735,69 @@ h4 span {
 .adress2 > p {
     font-size: 15px;
     margin-left: 7px;
-    margin-top: 70px;
+    margin-top: 175px;
     font-weight: 700;
     color: grey;
+    text-align: center;
 }
 
 .name2 {
     font-size: 20px;
     position: absolute;
     bottom: 8%;
-    left: 20%;
+    left: 27%;
     font-weight: 600;
     color: rgb(35, 32, 32);
 }
 
 .info3 {
     
-    width: 200px;
-    height: 250px;
-    background-color: white;
-    position: absolute;
-    top: 350px;
-    left: 575px;
-    align-content: center;
-    border-radius: 10px;
-    /* border: 1px solid black; */
-    border: none;
-    z-index: 10;
-}
-
-.id3{
-    border-bottom: 1px solid black;
-}
-
-.info3 .id3 .link3 {
-    font-size: 20px;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 10%;
-    left: 50%;
+    right: 637px;
+    border-radius: 50%;
+    border: 0.2px solid rgba(0, 0, 0, 0.177); 
+    border: none;
+    z-index: 10;
+   
+}
+
+
+
+.info3 .id3 >span {
+    font-size: 20px;
+    position: absolute;
+    top: 7%;
+    left: 35%;
    word-spacing: 100px;
    font-weight: 600;
-   color: rgb(48, 83, 187);
-   margin-left: 10px;
-    
+   color: rgb(79, 47, 208);
+   text-align: center;
+   
 }
 
 .info3 .id3  > h1 {
     font-size: 20px;
     position: absolute;
-    top: 10%;
-    left: 5%;
+    top: 18%;
+    left: 43%;
     font-weight: 700;
     color: rgb(35, 32, 32);
+    text-align: center;
 
 }
+
+
+.img3{
+    width: 15%;
+    position: absolute;
+    top: 34%;
+    left: 145px;
+}
+
 
 .time3 > h1 {
     font-size: 20px;
@@ -676,59 +820,69 @@ h4 span {
 .adress3 > p {
     font-size: 15px;
     margin-left: 7px;
-    margin-top: 70px;
+    margin-top: 175px;
     font-weight: 700;
     color: grey;
+    text-align: center;
 }
 
 .name3 {
     font-size: 20px;
     position: absolute;
     bottom: 8%;
-    left: 18%;
+    left: 27%;
     font-weight: 600;
     color: rgb(35, 32, 32);
 }
 
 .info4 {
     
-    width: 200px;
-    height: 250px;
-    background-color: white;
-    position: absolute;
-    top: 350px;
-    left: 855px;
-    align-content: center;
-    border-radius: 10px;
-    /* border: 1px solid black; */
-    border: none;
-    z-index: 10;
-}
-
-.id4{
-    border-bottom: 1px solid black;
-}
-.info4 .id4 .link4 {
-    font-size: 20px;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 10%;
-    left: 50%;
+    right: 355px;
+    border-radius: 50%;
+    border: 0.2px solid rgba(0, 0, 0, 0.177); 
+    border: none;
+    z-index: 10;
+   
+}
+
+
+
+.info4 .id4 >span {
+    font-size: 20px;
+    position: absolute;
+    top: 7%;
+    left: 42%;
    word-spacing: 100px;
    font-weight: 600;
-   color: rgb(174, 36, 36);
-   margin-left: 49px;
-    
+   color: rgb(159, 41, 41);
+   text-align: center;
+   
 }
 
 .info4 .id4  > h1 {
     font-size: 20px;
     position: absolute;
-    top: 10%;
-    left: 5%;
+    top: 18%;
+    left: 43%;
     font-weight: 700;
     color: rgb(35, 32, 32);
+    text-align: center;
 
 }
+
+
+.img4{
+    width: 15%;
+    position: absolute;
+    top: 33.5%;
+    left: 145px;
+}
+
 
 .time4 > h1 {
     font-size: 20px;
@@ -751,34 +905,395 @@ h4 span {
 .adress4 > p {
     font-size: 15px;
     margin-left: 7px;
-    margin-top: 70px;
+    margin-top: 175px;
     font-weight: 700;
     color: grey;
+    text-align: center;
 }
 
 .name4 {
     font-size: 20px;
     position: absolute;
     bottom: 8%;
-    left: 27%;
+    left: 33%;
     font-weight: 600;
     color: rgb(35, 32, 32);
 }
 
-.driver {
-    
-    width: 400px;
-    height: 476px;
-    background-color: white;
+.info5 {
+    width: 260px;
+    height: 260px;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    top: 258px;
-    left: 73.9%;
+    top: 100%;
+    left: 15px;
     align-content: center;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    /* border: 1px solid black; */
+    border-radius: 50%;
+    border: 0.2px solid rgba(0, 0, 0, 0.177); 
     border: none;
     z-index: 10;
+} 
+
+
+
+.info5 .id5 {
+    font-size: 20px;
+    position: absolute;
+    top: 7%;
+    left: 33%;
+   word-spacing: 100px;
+   font-weight: 600;
+   color: rgb(41, 159, 52);
+   
+     
+}
+
+.info5 .id5  > h1 {
+    font-size: 20px;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    font-weight: 700;
+    color: rgb(35, 32, 32);
+
+} 
+
+
+ .img5{
+    width: 15%;
+    position: relative;
+    top: 23px;
+    left: 145px;
+} 
+
+
+ .time5 > h1 {
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+} 
+
+ .time5 span{
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+    text-align: center;
+
+}  
+
+
+
+ .adress5 > p {
+    font-size: 15px;
+    margin-left: 7px;
+    margin-top: 70px;
+    font-weight: 700;
+    color: grey;
+    text-align: center;
+} 
+
+
+.name5 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 8%;
+    left: 26%;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+    text-align: center;
+    
+} 
+
+.info6 {
+    width: 260px;
+    height: 260px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 100%;
+    left: 295px;
+    align-content: center;
+    border-radius: 50%;
+    border: 0.2px solid rgba(0, 0, 0, 0.177); 
+    border: none;
+    z-index: 10;
+} 
+
+
+
+.info6 .id6 {
+    font-size: 20px;
+    position: absolute;
+    top: 7%;
+    left: 34%;
+   word-spacing: 100px;
+   font-weight: 600;
+   color: rgb(79, 47, 208);
+   
+     
+}
+
+.info6 .id6  > h1 {
+    font-size: 20px;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    font-weight: 700;
+    color: rgb(35, 32, 32);
+
+} 
+
+
+ .img6{
+    width: 15%;
+    position: relative;
+    top: 23px;
+    left: 145px;
+} 
+
+
+ .time6 > h1 {
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+} 
+
+ .time6 span{
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+    text-align: center;
+
+}  
+
+
+
+ .adress6 > p {
+    font-size: 15px;
+    margin-left: 7px;
+    margin-top: 70px;
+    font-weight: 700;
+    color: grey;
+    text-align: center;
+} 
+
+
+.name6 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 8%;
+    left: 28%;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+    text-align: center;
+    
+} 
+
+.info7 {
+    width: 260px;
+    height: 260px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 100%;
+    left: 577px;
+    align-content: center;
+    border-radius: 50%;
+    border: 0.2px solid rgba(0, 0, 0, 0.177); 
+    border: none;
+    z-index: 10;
+} 
+
+
+
+.info7 .id7 {
+    font-size: 20px;
+    position: absolute;
+    top: 7%;
+    left: 39%;
+   word-spacing: 100px;
+   font-weight: 600;
+   color: rgb(83, 87, 90);
+   
+     
+}
+
+.info7 .id7  > h1 {
+    font-size: 20px;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    font-weight: 700;
+    color: rgb(35, 32, 32);
+
+} 
+
+
+ .img7{
+    width: 15%;
+    position: relative;
+    top: 23px;
+    left: 175px;
+} 
+
+
+ .time7 > h1 {
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+} 
+
+ .time7 span{
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+    text-align: center;
+
+}  
+
+
+
+ .adress7 > p {
+    font-size: 15px;
+    margin-left: 7px;
+    margin-top: 70px;
+    font-weight: 700;
+    color: grey;
+    text-align: center;
+} 
+
+
+.name7 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 8%;
+    left: 29%;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+    text-align: center;
+    
+} 
+
+.info8 {
+    width: 260px;
+    height: 260px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 100%;
+    right: 355px;
+    align-content: center;
+    border-radius: 50%;
+    border: 0.2px solid rgba(0, 0, 0, 0.177); 
+    border: none;
+    z-index: 10;
+} 
+
+
+
+.info8 .id8 {
+    font-size: 20px;
+    position: absolute;
+    top: 7%;
+    left: 41%;
+   word-spacing: 100px;
+   font-weight: 600;
+   color: rgb(159, 41, 41);
+   
+     
+}
+
+.info8 .id8  > h1 {
+    font-size: 20px;
+    position: absolute;
+    top: 100%;
+    left: 6%;
+    font-weight: 700;
+    color: rgb(35, 32, 32);
+
+} 
+
+
+ .img8{
+    width: 15%;
+    position: relative;
+    top: 23px;
+    left: 145px;
+} 
+
+
+ .time8 > h1 {
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+} 
+
+ .time8 span{
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+    text-align: center;
+
+}  
+
+
+
+ .adress8 > p {
+    font-size: 15px;
+    margin-left: 7px;
+    margin-top: 70px;
+    font-weight: 700;
+    color: grey;
+    text-align: center;
+} 
+
+
+.name8 {
+    font-size: 18px;
+    position: absolute;
+    bottom: 9%;
+    left: 21%;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+    text-align: center;
+    
+} 
+
+ .driver {
+    
+    width: 330px;
+    height: 860px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 214px;
+    left:1142px ;
+    align-content: center;
+    border-bottom-left-radius: 10px;
+    border: 1px solid black; 
+    border: none;
+    overflow: hidden;
+    z-index: 2;
 }
 
 .driver > h1 {
@@ -789,34 +1304,28 @@ h4 span {
     left: 5%;
 }
 
-.search{
-    width: 70%;
+#search{
+    font-size: 1.35vw;
     position: absolute;
-    top: 60px;
-    left: 5%;
-    border: 1px solid black;
-    border-radius: 1px;
+    top: 14%;
+    padding-left: 17px;
 }
 
 .driver > img {
     width: 25px;
     position: absolute;
-    top: 12.6%;
-    right: 16%;
+    top: 14%;
+    right: 10%;
     opacity: 0.3;
 }
 
-/* .driver .names1{
-    border-bottom: 1px solid black;
-    background-color: #71B280;
 
-} */
 
-.names1 > h1{
+ .names1 > h1{
     font-size: 20px;
     font-weight: 500;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 10px;   
 }
 
@@ -837,20 +1346,17 @@ h4 span {
     font-size: 15px;
     font-weight: 500;
     position: absolute;
-    top: 40%;
+    top: 70%;
     left: 10px;   
 }
 
-/* .names2{
-    border-bottom: 1px solid black;
-    background-color: #3CF2DE;
-} */
+
 
 .names2 > h1{
     font-size: 20px;
     font-weight: 500;
     position: absolute;
-    top: 55%;
+    top: 15%;
     left: 10px;   
 }
 
@@ -858,7 +1364,7 @@ h4 span {
     font-size: 18px;
     font-weight: 500;
     position: absolute;
-    top: 54%;
+    top: 30%;
     right: 10px;  
     border: 1px solid black;
     border: none;
@@ -872,7 +1378,7 @@ h4 span {
     font-size: 15px;
     font-weight: 500;
     position: absolute;
-    top: 64%;
+    top: 65%;
     left: 10px;   
 }
 
@@ -880,11 +1386,13 @@ h4 span {
     border-bottom: 1px solid black;
 } */
 
+
+
 .names3 > h1{
     font-size: 20px;
     font-weight: 500;
     position: absolute;
-    bottom:10.5% ;
+    top: 15%;
     left: 10px;   
 }
 
@@ -892,30 +1400,407 @@ h4 span {
     font-size: 18px;
     font-weight: 500;
     position: absolute;
-    bottom: 10%;
+    top: 30%;
     right: 10px;  
     border: 1px solid black;
     border: none;
     padding: 5px 15px;
     border-radius: 10px;
-    background-color: rgba(219, 52, 43, 0.5);
+    background-color: rgba(210, 83, 63, 0.681);
+
 }
 
 .names3 > h2{
     font-size: 15px;
     font-weight: 500;
     position: absolute;
-    bottom: 13%;
+    top: 65%;
     left: 10px;   
-}
-#name{
-    background-color: white;
-    height: 8vh;
-    margin-top: 9px;
-    position: relative;
-    border-top: 2px solid #000;
-}
-.names3{
-    border-bottom: 2px solid #000;
 
 }
+
+.names4 > h1{
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 15%;
+    left: 10px;   
+}
+
+.names4 > span {
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    top: 30%;
+    right: 10px;  
+    border: 1px solid black;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 128, 0,0.5);
+
+}
+
+.names4 > h2{
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    top: 65%;
+    left: 10px;   
+}
+#Nam{
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 10%;
+    border-top: 1px solid #000;
+    z-index: 1;
+}
+
+.page3{
+    width: 100%;
+    height: 60%;
+    background-color: #d9f4f2;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .pg-footer {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  .footer {
+    background: linear-gradient(to right, #134E5E,#71B280);
+      color: #fff;
+  }
+  .footer-wave-svg {
+      background-color: transparent;
+      display: block;
+      height: 30px;
+      position: relative;
+      top: -1px;
+      width: 100%;
+  }
+  .footer-wave-path {
+      fill: 
+      #d9f4f2;
+  }
+  
+  .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 450px;
+      position: relative;
+  }
+  
+  .footer-content-column {
+      box-sizing: border-box;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      color: #fff;
+  }
+  
+  .footer-content-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-logo-link {
+      display: inline-block;
+      font-size: 26px;
+    
+      
+  }
+
+  .footer-logo-link h1{
+    border-bottom: 1px solid transparent;
+  }
+
+  .footer-logo-link h1:hover{
+    border-bottom: 1px solid white;
+    transition: 1s all ;
+  }
+  .footer-menu {
+      margin-top: 30px;
+  }
+  
+  .footer-menu-name {
+      color: #fffff2;
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      line-height: 18px;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-transform: uppercase;
+  }
+  .footer-menu-list {
+      list-style: none;
+      margin-bottom: 0;
+      margin-top: 10px;
+      padding-left: 0;
+  }
+  .footer-menu-list li {
+      margin-top: 5px;
+  }
+  
+  .footer-call-to-action-description {
+      color: #fffff2;
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+  .footer-call-to-action-button:hover {
+      background-color: #fffff2;
+      color: #1b5661;
+  }
+  .button:last-of-type {
+      margin-right: 0;
+  }
+  .footer-call-to-action-button {
+      background-color: #35726a;
+      border-radius: 21px;
+      color: #fffff2;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      line-height: 18px;
+      padding: 12px 30px;
+      margin: 0 10px 10px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color .2s;
+      cursor: pointer;
+      position: relative;
+  }
+  .footer-call-to-action {
+      margin-top: 30px;
+  }
+  .footer-call-to-action-title {
+      color: #fffff2;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      line-height: 18px;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-transform: uppercase;
+  }
+  .footer-call-to-action-link-wrapper {
+      margin-bottom: 0;
+      margin-top: 10px;
+      color: #fff;
+      text-decoration: none;
+  }
+  .footer-call-to-action-link-wrapper a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  
+  
+  
+  
+  .footer-social-links {
+      bottom: 0;
+      height: 54px;
+      position: absolute;
+      right: 0;
+      width: 236px;
+  }
+  
+  .footer-social-amoeba-svg {
+      height: 54px;
+      left: 0;
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 236px;
+  }
+  
+  .footer-social-amoeba-path {
+      fill: #35726a;
+  }
+  
+  .footer-social-link.linkedin {
+      height: 26px;
+      left: 3px;
+      top: 11px;
+      width: 26px;
+  }
+
+  .footer-social-link.linkedin:hover{
+    transition: 0.6s ease-in-out;
+    transform: scale(4);
+  }
+  
+  .footer-social-link {
+      display: block;
+      padding: 10px;
+      position: absolute;
+  }
+  
+  .hidden-link-text {
+      position: absolute;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px,1px,1px,1px);
+      -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+      clip-path: inset(0px 0px 99.9% 99.9%);
+      overflow: hidden;
+      height: 1px;
+      width: 1px;
+      padding: 0;
+      border: 0;
+      top: 50%;
+  }
+  
+  .footer-social-icon-svg {
+      display: block;
+  }
+  
+  .footer-social-icon-path {
+      fill: #fffff2;
+      transition: fill .2s;
+  }
+
+  .footer-social-link.twitter {
+      height: 28px;
+      left: 62px;
+      top: 3px;
+      width: 28px;
+  }
+
+  .footer-social-link.twitter:hover{
+    transition: 0.6s ease-in-out;
+    transform: scale(4);
+  }
+  
+  .footer-social-link.youtube {
+      height: 24px;
+      left: 123px;
+      top: 12px;
+      width: 24px;
+  }
+
+  .footer-social-link.youtube:hover{
+    transition: 0.6s ease-in-out;
+    transform: scale(7);
+  }
+  
+  .footer-social-link.github {
+      height: 34px;
+      left: 172px;
+      top: 7px;
+      width: 34px;
+  }
+
+  .footer-social-link.github:hover{
+    transition: 0.6s ease-in-out;
+    transform: scale(4);
+  }
+  
+  .footer-copyright {
+      background-color: #35726a;
+      color: #fff;
+      padding: 15px 30px;
+    text-align: center;
+  }
+  
+  .footer-copyright-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+  }
+  
+  .footer-copyright-text {
+    color: #fff;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-bottom: 0;
+      margin-top: 0;
+  }
+  
+  .footer-copyright-link {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* Media Query For different screens */
+  @media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 1050px;
+      position: relative;
+    }
+  }
+  @media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
+    .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 1050px;
+      position: relative;
+    }
+  }
+  @media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 1050px;
+      position: relative;
+    }
+  }
+  @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  
+  }
+  @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+  
+  }
+  @media (min-width:1281px) { /* hi-res laptops and desktops */
+  
+  }
+  
+  
+  
+  
+  @media (min-width: 760px) {
+    .footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 450px;
+        position: relative;
+    }
+  
+    .footer-wave-svg {
+        height: 50px;
+    }
+  
+    .footer-content-column {
+        width: 24.99%;
+    }
+  }
+  @media (min-width: 568px) {
+    /* .footer-content-column {
+        width: 49.99%;
+    } */
+  }
+  
