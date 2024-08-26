@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    /* background: linear-gradient(to right, rgb(3, 118, 156), blue, darkblue); */
+    background: linear-gradient(to right, #134E5E,#71B280);
+}
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login-box{
+    width: 500px;
+    background: linear-gradient(to right, rgb(158, 213, 228), lightblue, lightskyblue);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px  rgb(0, 0, 0); 
+    padding-bottom: 40px;
+}
+#email,#pass{
+    outline: none;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.button{
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: rgb(21, 77, 74);
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    align-items: end;
+    color: white;
+}
+.button:hover{
+    background-color: lightseagreen;
+    color: black;
+    transition: all ease-in-out 0.5s;
+}
