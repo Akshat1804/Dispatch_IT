@@ -150,7 +150,7 @@ body {
     width: 160px;
     height: 160px;
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 20px;
 
 }
 
@@ -187,6 +187,37 @@ body {
 .cus{
     margin-top: 40px;
 }
+
+
+.pro{
+    
+    object-fit: cover;
+}
+
+#box3{
+    display :flex;
+    justify-content: center;
+}
+
+#input{
+    
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 4px;
+    background-color: #d9f4f2;
+
+
+}
+#gender{
+    height: 20px;
+    width: 150px;
+    text-align: center;
+    
+    background-color: #d9f4f2;
+
+    border-bottom: 2px solid black;
+}
+
 
 
 
